@@ -8,6 +8,4 @@ public class AccountActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.account);
   }
-  
-  
 }

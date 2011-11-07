@@ -28,7 +28,8 @@
   <TextView
     style="@style/TextItem"
     android:clickable="true"
-    android:text="@string/link_nodevice" />
+    android:text="@string/link_nodevice"
+    android:onClick="noDeviceClickHandler"/>
   <LinearLayout
     android:orientation="horizontal"
     android:gravity="center"
