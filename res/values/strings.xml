@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">SetupSync</string>
+
+  <string name="title_connect">Connect to Sync</string>
+
+  <!-- JPAKE Key Screen -->
+  <string name="pair_subtitle">To activate, select \"Pair a Device\" on your other device.</string>
+  <string name="link_show"><a href="https://support.mozilla.com/en-US/kb/add-a-device-to-firefox-sync">Show me how</a></string>
+  <string name="link_nodevice"><a href="#">I\'m not near my computer...</a></string>
+
+  <!-- Account Login Screen -->
+  <string name="account_subtitle">Enter your Sync account information</string>
+  <string name="input_username">Account Name</string>
+  <string name="input_password">Password</string>
+  <string name="input_key">Recovery Key</string>
+
+  <string name="checkbox_server">Use custom server</string>
+  <string name="input_server">Server URL</string>
+
+  <!-- Common text -->
+  <string name="button_cancel">Cancel</string>
+  <string name="button_connect">Connect</string>
+
+</resources>
