@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">SetupSync</string>
+  <string name="app_name">Firefox Sync</string>
   <string name="title_connect">Connect to Sync</string>
 
   <!-- JPAKE Key Screen -->
   <string name="pair_subtitle">From a Firefox Sync-connected computer, go to Sync options and select "Add a device"</string>
   <string name="link_show"><a href="https://support.mozilla.com/en-US/kb/add-a-device-to-firefox-sync">Show me how</a></string>
-  <string name="link_nodevice"><a href="#">I\'m not near my computer...</a></string>
+  <string name="link_nodevice"><a href="#">I\'m not near my computer…</a></string>
 
   <!-- Account Login Screen -->
-  <string name="subtitle_account">Enter your Sync account information</string>
+  <string name="subtitle_account">Enter your Firefox Sync account information</string>
   <string name="input_username">Account Name</string>
   <string name="input_password">Password</string>
   <string name="input_key">Recovery Key</string>

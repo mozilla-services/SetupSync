@@ -1,6 +1,5 @@
-package setup.main;
+package org.mozilla.android.sync.setup.main;
 
-import Utils.Constants;
 import android.accounts.Account;
 import android.accounts.AccountAuthenticatorActivity;
 import android.accounts.AccountManager;
@@ -8,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import org.mozilla.android.sync.setup.Constants;
 
 public class AccountActivity extends AccountAuthenticatorActivity {
   private AccountManager mAccountManager;
