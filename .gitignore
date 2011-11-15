@@ -1,0 +1,6 @@
+*~
+.sw?
+.*.swp
+local.properties
+bin/
+gen/
