@@ -11,9 +11,16 @@ public class SetupSyncActivity extends Activity {
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.pair);
-    }
-  public void noDeviceClickHandler(View target) {
+  }
+
+  /* Click Handlers */
+  public void manualClickHandler(View target) {
     Intent accountIntent = new Intent(this, AccountActivity.class);
+    accountIntent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
     startActivity(accountIntent);
+    overridePendingTransition(0, 0);
+  }
+  public void cancelClickHandler(View target) {
+    finish();
   }
 }
