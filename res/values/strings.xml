@@ -16,12 +16,21 @@
   <string name="checkbox_server">Use custom server</string>
   <string name="input_server">Server URL</string>
   
-  <!-- Setup Timeout -->
+  <!-- Setup Fail -->
   <string name="title_fail">Cannot Set Up Sync</string>
   <string name="subtitle_fail">Fennec could not connect to Sync. Would you like to try again?</string>
   <string name="button_tryagain">Try again</string>
   <string name="button_manual">Manual Setup</string>
+  
+  <!-- Setup Success -->
+  <string name="title_success">Setup Complete</string>
+  <string name="subtitle_success">Your data is now being encrypted and uploaded into the background. You can return to using Firefox while your data syncs.</string>
+  <string name="button_close">Close</string>
+  
   <!-- Common text -->
   <string name="button_cancel">Cancel</string>
   <string name="button_connect">Connect</string>
+  
+  <!-- Account strings -->
+  <string name="account_label">Firefox Sync</string>
 </resources>

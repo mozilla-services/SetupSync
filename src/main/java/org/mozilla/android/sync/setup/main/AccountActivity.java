@@ -1,4 +1,8 @@
-package org.mozilla.android.sync.setup.main;
+package main.java.org.mozilla.android.sync.setup.main;
+
+import main.java.org.mozilla.android.sync.setup.Constants;
+
+import org.mozilla.android.sync.setup.main.R;
 
 import android.accounts.Account;
 import android.accounts.AccountAuthenticatorActivity;
@@ -7,8 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-
-import org.mozilla.android.sync.setup.Constants;
+import android.widget.EditText;
 
 public class AccountActivity extends AccountAuthenticatorActivity {
   private AccountManager mAccountManager;
@@ -30,22 +33,25 @@ public class AccountActivity extends AccountAuthenticatorActivity {
    */
   public void connectClickHandler(View target) {
     Log.d("connecting", "ConnectClickHandler");
-    String username = findViewById(R.id.username).toString();
-    String password = findViewById(R.id.password).toString();
-    String key = findViewById(R.id.key).toString();
-    
-    final Account account = new Account(username, Constants.TYPE_SYNC);
-    //final Bundle userbundle = new Bundle();
-    //userbundle.putString(Constants.OPTION_KEY, key);
-    mAccountManager.addAccountExplicitly(account, password, null);
-    
+    String username = ((EditText) findViewById(R.id.username)).getText().toString();
+    String password = ((EditText) findViewById(R.id.password)).getText().toString();
+    String key = ((EditText) findViewById(R.id.key)).getText().toString();
+
+    // TODO : Authenticate with Sync Service
+
+    // Add account to AccountManager
+    final Account account = new Account(username, Constants.ACCOUNTTYPE_SYNC);
+    final Bundle userbundle = new Bundle();
+    userbundle.putString(Constants.OPTION_KEY, key);
+    mAccountManager.addAccountExplicitly(account, password, userbundle);
+
     final Intent intent = new Intent();
     intent.putExtra(AccountManager.KEY_ACCOUNT_NAME, username);
-    intent.putExtra(AccountManager.KEY_ACCOUNT_TYPE, Constants.TYPE_SYNC);
-    intent.putExtra(AccountManager.KEY_AUTHTOKEN, Constants.TYPE_SYNC);
-    this.setAccountAuthenticatorResult(intent.getExtras());
+    intent.putExtra(AccountManager.KEY_ACCOUNT_TYPE, Constants.ACCOUNTTYPE_SYNC);
+    intent.putExtra(AccountManager.KEY_AUTHTOKEN, Constants.ACCOUNTTYPE_SYNC);
+    setAccountAuthenticatorResult(intent.getExtras());
     // fake successful authentication
-    this.setResult(RESULT_OK, intent);
-    this.finish();
+    setResult(RESULT_OK, intent);
+    moveTaskToBack(true);
   }
 }

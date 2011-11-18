@@ -3,4 +3,4 @@
     android:accountType="account.type.sync"
     android:icon="@drawable/icon"
     android:smallIcon="@drawable/icon"
-    android:label="syncAuthenticatorLabel" />
+    android:label="@string/account_label" />

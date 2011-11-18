@@ -1,4 +1,6 @@
-package org.mozilla.android.sync.setup.main;
+package main.java.org.mozilla.android.sync.setup.main;
+
+import org.mozilla.android.sync.setup.main.R;
 
 import android.app.Activity;
 import android.content.Intent;

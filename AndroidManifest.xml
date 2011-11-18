@@ -16,16 +16,17 @@
     <activity
       android:label="@string/app_name"
       android:theme="@style/ThemeTransparent"
-      android:name="org.mozilla.android.sync.setup.main.SetupSyncActivity" >
+      android:name="main.java.org.mozilla.android.sync.setup.main.SetupSyncActivity" >
       <intent-filter >
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".AccountActivity"
+    <activity android:name="main.java.org.mozilla.android.sync.setup.main.AccountActivity"
       android:theme="@style/ThemeTransparent" >
     </activity>
-    <service android:name=".SyncAuthenticatorService">
+    <service android:name="main.java.org.mozilla.android.sync.setup.main.SyncAuthenticatorService"
+        android:exported="true">
       <intent-filter>
           <action android:name="android.accounts.AccountAuthenticator" />
       </intent-filter>
