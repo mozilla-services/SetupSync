@@ -24,7 +24,8 @@
 
             <Button
                 style="@style/ButtonCommon"
-                android:text="@string/button_tryagain" />
+                android:text="@string/button_tryagain"
+                android:onClick="tryAgainClickHandler" />
 
             <Button
                 style="@style/ButtonCommon"
