@@ -40,8 +40,7 @@ public class AccountActivity extends AccountAuthenticatorActivity {
   }
   
   public void cancelClickHandler(View target) {
-    finish();
-    overridePendingTransition(0, 0);
+    moveTaskToBack(true);
   }
   
   /*
@@ -88,13 +87,21 @@ public class AccountActivity extends AccountAuthenticatorActivity {
     setResult(RESULT_OK, intent);
 //    Intent acctIntent = new Intent("android.settings.SYNC_SETTINGS");
 //    startActivity(acctIntent);
-    //moveTaskToBack(true);
+//    moveTaskToBack(true);
     
-    authFailure();
+    // Testing out the authFailure case
+    //authFailure();
+    authSuccess();
   }
   
   private void authFailure() {
     Intent intent = new Intent(mContext, SetupFailureActivity.class);
     startActivity(intent);
+  }
+  
+  private void authSuccess() {
+    Intent intent = new Intent(mContext, SetupSuccessActivity.class);
+    startActivity(intent);
+    finish();
   }
 }

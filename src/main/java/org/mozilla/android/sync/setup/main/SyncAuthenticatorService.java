@@ -52,7 +52,7 @@ public class SyncAuthenticatorService extends Service {
         String accountType, String authTokenType, String[] requiredFeatures,
         Bundle options) throws NetworkErrorException {
       Log.d(TAG, "addAccount()");
-      final Intent intent = new Intent(mContext, AccountActivity.class);
+      final Intent intent = new Intent(mContext, SetupSyncActivity.class);
       intent.putExtra(AccountManager.KEY_ACCOUNT_AUTHENTICATOR_RESPONSE,
           response);
       intent.putExtra("accountType", Constants.ACCOUNTTYPE_SYNC);

@@ -38,6 +38,9 @@
         <activity
             android:name="main.java.org.mozilla.android.sync.setup.main.SetupFailureActivity"
             android:theme="@style/ThemeTransparent" />
+        <activity
+            android:name="main.java.org.mozilla.android.sync.setup.main.SetupSuccessActivity"
+            android:theme="@style/ThemeTransparent" />
         <service
             android:exported="true"
             android:name="main.java.org.mozilla.android.sync.setup.main.SyncAuthenticatorService" >

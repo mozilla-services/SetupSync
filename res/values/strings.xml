@@ -25,7 +25,7 @@
   <!-- Setup Success -->
   <string name="title_success">Setup Complete</string>
   <string name="subtitle_success">Your data is now being encrypted and uploaded into the background. You can return to using Firefox while your data syncs.</string>
-  <string name="button_close">Close</string>
+  <string name="settings">Settings</string>
   
   <!-- Common text -->
   <string name="button_cancel">Cancel</string>
